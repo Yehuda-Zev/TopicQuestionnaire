@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Topic Quiz Challenge</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Topic Quiz Challenge</h1>
+  <p class="subtitle">Pick a topic, answer 20 questions, beat the clock.</p>
+
+  <div id="topic-screen" class="screen active">
+    <div id="topic-grid" class="topic-grid"></div>
+  </div>
+
+  <div id="quiz-screen" class="screen">
+    <div class="quiz-header">
+      <span id="q-counter"></span>
+      <span id="timer" class="timer"></span>
+    </div>
+    <div class="progress-bar"><div id="progress-fill" class="progress-fill"></div></div>
+    <div id="question-card" class="question-card"></div>
+  </div>
+
+  <div id="results-screen" class="screen">
+    <div class="score-summary">
+      <div id="score-num" class="score-num"></div>
+      <div id="score-time" class="score-time"></div>
+    </div>
+    <div id="review-list"></div>
+    <button id="restart-btn" class="restart-btn">Try another topic</button>
+  </div>
+</div>
+
+<script src="questions.js"></script>
+<script src="quiz.js"></script>
+</body>
+</html>
